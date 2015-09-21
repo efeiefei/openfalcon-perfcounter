@@ -1,0 +1,29 @@
+{
+  "name": "openfalcon-perfcounter",
+  "version": "0.0.2",
+  "description": "Connect Metrics and Open-Falcon for Node.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efeiefei/openfalcon-perfcounter.git"
+  },
+  "keywords": [
+    "metrics",
+    "openfalcon",
+    "perfcounter",
+    "counter"
+  ],
+  "author": {
+    "name": "efei",
+    "email": "efeigm@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {                                                                           
+    "url": "https://github.com/efeiefei/openfalcon-perfcounter/issues"
+  },
+  "homepage": "https://github.com/efeiefei/openfalcon-perfcounter#readme",
+  "dependencies": {
+    "metrics": "^0.1.9",
+    "request": "^2.62.0"
+  }
+}
