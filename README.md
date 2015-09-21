@@ -50,6 +50,7 @@ var PerfCounter = OP.getClusterInstance();      // 用于cluster模式
 若使用cluster模式，需调用getClusterInstance()。因为多个进程就同一event向Agent发送数据，Agent不会自动加和；若调用getClusterInstance()，PerfCounter会在每个worker进程向master进程发送数据，由master进程加和后发送给Agent。
 
 4.设置Tag ```PerfCounter.addTags(eventName, {k1: v1, k2: v2})```
+
 Tag 会发送到Agent模块。
 
 5.计数
@@ -63,4 +64,5 @@ perfCounter会自动分析出count()的 **CPS-1-min、CPS-5-min、CPS-15-min**�
 PerfCounter会自动分析出duration()的 **75-percentile、95-percentile、99-percentile、999-percentile**，即75%、95%、99%、99.9% 采样的最大时间。
 
 6.详细控制
+
 同时提供 incCounter、markMeter、updateHistogram、updateTimer 四种方法进行更精确的控制。其实count()与duration()就是利用meter及timer实现的。具体查看代码吧。
